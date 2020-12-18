@@ -14,7 +14,7 @@ last_state = 0
 
 def qTableUpdate():
     qTable[last_state][last_action] += step_size * (last_reward - qTable[last_state][last_action])
-
+ 
 
 def getAction(state):
     logits = qTable[state]/qTable[state].sum()
